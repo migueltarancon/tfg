@@ -1,4 +1,4 @@
-La red que lee el programa debe estar en un archivo en formato lista de adyacencia. Es decir, en cada línea del fichero de texto habra una pareja de números indicando los ndos entre los que está el link. Adicionalmente, cada pareja de números deberá ir acompañada por el tipo de link que es, es decir, dirigido/no dirigido.
+La red que lee el programa debe estar en un archivo en formato lista de adyacencia. Es decir, en cada línea del fichero de texto habrá una pareja de números indicando los nodos entre los que está el link. Adicionalmente, cada pareja de números deberá ir acompañada por el tipo de link que es, es decir, dirigido/no dirigido.
 
 Ejemplo:
 
