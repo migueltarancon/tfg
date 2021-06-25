@@ -40,11 +40,11 @@ main(int argc, char *argv[]){
     double integral=0;
     for(int i=0; i<(max-min+1); i++){
         sum+=distr_grad[i];
-        integral+=distr_teorica_ba(i+min);
+        integral+=distr_teorica_ba(i+min);  //especificar la distribucion teorica
     }
 
     for(int i=0; i<(max-min+1); i++){
-        fprintf(salida, "%d\t%d\t%e\n", i+min, distr_grad[i], sum/integral*distr_teorica_ba(i+min));
+        fprintf(salida, "%d\t%d\t%e\n", i+min, distr_grad[i], sum/integral*distr_teorica_ba(i+min));    //especificar la distribucion teorica
     }
     fclose(fichero);
     fclose(salida);
