@@ -2,7 +2,7 @@ La red que lee el programa debe estar en un archivo en la misma dirección que e
 
 Ejemplo:
 
-1,0,Undirected
+1,0,Undirected\n
 2,0,Undirected
 3,2,Undirected
 4,3,Undirected
