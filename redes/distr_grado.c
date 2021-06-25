@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 
+//poner los parámetros de la red para representar las distribuciones teoricas
 #define N 10000
 #define p 0.02
 
@@ -15,7 +16,7 @@ double distr_teorica_ba(int grad);
 main(int argc, char *argv[]){
     int grado, min=-1, max;
     char dummy[100];
-    FILE *fichero=fopen("grados_barabasi_albert(scale-free)_m020_m4_T9980.csv", "r");
+    FILE *fichero=fopen("grados_red.csv", "r"); //fichero con los grados de cada nodo de la red
     do{
         fscanf(fichero, "%d", &grado);
         if(min==-1){
@@ -34,7 +35,7 @@ main(int argc, char *argv[]){
         distr_grad[grado-min]++;
     }while(!feof(fichero));
     distr_grad[grado-min]--;
-    FILE *salida=fopen("distr_grado_barabasialbert_m020_m4_T9980.dat", "w");
+    FILE *salida=fopen("distr_grado_red.dat", "w"); //fichero donde se imprimen los resultados
     int sum=0;
     double integral=0;
     for(int i=0; i<(max-min+1); i++){
